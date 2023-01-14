@@ -1,0 +1,33 @@
+@model SpeseCreateInputModel
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    <div class="row">
+        <div class="col-12">
+        <p>&nbsp;</p>
+            <div asp-validation-summary="All"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">Descrizione</div>
+        <div class="col-md-3">Importo</div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 mb-3">
+            <input type="text" asp-for="Descrizione" class="form-control" placeholder="Digita la descrizione della spesa">
+        </div>
+        <div class="col-md-3">
+            <input type="text" asp-for="Importo" class="form-control" placeholder="Digita l'importo">
+        </div>
+        <div class="col-md-2"><button type="submit" class="btn btn-outline-success"><i class="fas fa-check-circle"></i> Aggiungi spesa</button></div>
+        <div class="col-md-2"><a class="btn btn-outline-success" asp-action="Index"><i class="fas fa-times-circle"></i> Torna alle spese</a></div>
+    </div>
+    <div class="col-12"><p>&nbsp;</p></div>
+    <div class="col-12"><span><b>ATTENZIONE:</b></span> 
+    L'importo va inserito usando il punto (.) come separatore di decimali</div>
+</form>
+@section Scripts
+{
+    <partial name="_Validation"></partial>
+}

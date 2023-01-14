@@ -1,0 +1,68 @@
+html, body {
+    min-height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+body>.container {
+    flex: 1;
+}
+body>footer {
+    background-color: #28a745;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar-brand {
+    color: #ffffff !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+footer {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    padding-bottom: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+.jumbotron {
+    background-image: url('/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron h1 {
+    font-size: 3.5rem;
+}
+.field-validation-error {
+    color:red;
+}
+.validation-summary-errors ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.validation-summary-errors li {
+    color: darkred;
+    border-left: 3px solid red;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgba(255, 0, 0, 0.05);
+    margin-bottom: 2px;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}

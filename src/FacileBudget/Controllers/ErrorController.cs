@@ -1,13 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
+namespace FacileBudget.Controllers;
 
-namespace FacileBudget.Controllers
+public class ErrorController : Controller
 {
-    public class ErrorController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            ViewData["Title"] = "Errore";
-            return View();
-        }
+        ViewData["Title"] = "Errore";
+        return View();
     }
 }

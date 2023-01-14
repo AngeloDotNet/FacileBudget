@@ -1,10 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+namespace FacileBudget.Models.InputModels;
 
-namespace FacileBudget.Models.InputModels
+public class SpeseCreateInputModel
 {
-    public class SpeseCreateInputModel
-    {
-        public string Descrizione { get; set; }
-        public string Importo { get; set; }
-    }
+    public string Descrizione { get; set; }
+    public string Importo { get; set; }
 }

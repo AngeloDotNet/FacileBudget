@@ -1,7 +1,6 @@
-namespace FacileBudget.Models.Options
+namespace FacileBudget.Models.Options;
+
+public class ConnectionStringsOptions
 {
-    public class ConnectionStringsOptions
-    {
-      public string Default { get; set; }  
-    }
+    public string Default { get; set; }
 }

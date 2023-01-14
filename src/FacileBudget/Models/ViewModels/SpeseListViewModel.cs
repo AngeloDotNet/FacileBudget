@@ -1,10 +1,7 @@
-using FacileBudget.Models.InputModels;
+namespace FacileBudget.Models.ViewModels;
 
-namespace FacileBudget.Models.ViewModels
+public class SpeseListViewModel
 {
-    public class SpeseListViewModel
-    {
-        public ListViewModel<SpeseViewModel> Spese { get; set; }
-        public SpeseListInputModel Input { get; set; }
-    }
+    public ListViewModel<SpeseViewModel> Spese { get; set; }
+    public SpeseListInputModel Input { get; set; }
 }

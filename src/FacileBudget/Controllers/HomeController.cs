@@ -1,13 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
+namespace FacileBudget.Controllers;
 
-namespace FacileBudget.Controllers
+public class HomeController : Controller
 {
-    public class HomeController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            ViewData["Title"] = "Facile Budget";
-            return View();
-        }
+        ViewData["Title"] = "Facile Budget";
+        return View();
     }
 }

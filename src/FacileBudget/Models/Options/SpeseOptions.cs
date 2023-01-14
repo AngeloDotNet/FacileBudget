@@ -1,7 +1,6 @@
-namespace FacileBudget.Models.Options
+namespace FacileBudget.Models.Options;
+
+public partial class SpeseOptions
 {
-    public partial class SpeseOptions
-    {
-        public int PerPage { get; set; }   
-    }
+    public int PerPage { get; set; }
 }
